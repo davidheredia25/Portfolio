@@ -1,0 +1,13 @@
+@import '../variables.scss';
+
+.CtnSup{
+  height: 150vh;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  @include medium {
+    height: 180vh;
+  }
+}
+

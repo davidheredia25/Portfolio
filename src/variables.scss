@@ -1,0 +1,80 @@
+@mixin small {
+  @media only screen and (max-width: 600px) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media only screen and (max-width: 1065px) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media only screen and (max-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin ctnSupCaruText {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin cntCaru {
+  width: 600px;
+  margin-right: 20px;
+  display: inline-block;
+  position: relative;
+}
+
+@mixin btnClose {
+  position: absolute;
+  top: 10%;
+  left: 95%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin btnFullImg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+@mixin ctnImages {
+  display: flex;
+}
+
+@mixin ctnTextCaru {
+  width: 35%;
+  margin-left: 60px;
+}
+
+@mixin imgCaru {
+  height: 100%;
+  width: 300px;
+  object-fit: cover;
+  margin: 2px;
+  opacity: 90%;
+}
+
+@mixin titleCaru {
+  font-family: "Dosis", sans-serif;
+  letter-spacing: 2px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@mixin textCaru {
+  font-family: "Dosis", sans-serif;
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-weight: 600;
+}

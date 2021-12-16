@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  /* background-image: url(./Home/img/img.png); */
+  background-image: url(./Home/img/image1.png);
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-position: 0% 0%;
+  background-attachment: fixed;
+}
+
+#root {
+  height: 100%;
+}
+
+@import "~bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Montserrat&display=swap");

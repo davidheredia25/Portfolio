@@ -1,0 +1,68 @@
+@import "../variables.scss";
+
+.ctn {
+  width: 100%;
+  height: 100vh;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.text {
+  font-family: "Dosis", sans-serif;
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-weight: 600;
+  @include medium{
+    font-size: 12px;
+  }
+}
+
+.ctnTxt {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  width: 60%;
+  @include large{
+    margin-bottom: 30px;
+  }
+  @include medium{
+    width: 70%;
+    margin-bottom: 15px;
+    
+  }
+}
+
+.titleSup {
+  margin-bottom: 30px;
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-family: "Dosis", sans-serif;
+  @include medium{
+    font-size: 30px;
+  }
+}
+
+.imgPorfolio {
+  height: 600px;
+  @include large{
+    height: 400px;
+  }
+  @include medium{
+    height: 300px;
+  }
+}
+
+
+/* .img:hover {
+  opacity: 0.07;
+  /* -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  -ms-transition: opacity 500ms;
+  transition: opacity 500ms; */
