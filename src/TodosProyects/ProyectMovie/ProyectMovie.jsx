@@ -12,13 +12,6 @@ const ProyectMovie = () => {
     return (
         <div className={style.CtnPricipalMovie}>
 
-            <div className={style.ctnTextoCaru}>
-                <p className={style.title}> Movies </p>
-                <p className={style.textoCaru1}> Work in Movies Api, using React-Redux. You can search for movies, add them to favorites and see all the details of them
-                    <a href='https://github.com/davidheredia25/Movies-app'> Code</a>
-                </p>
-            </div>
-
             <div className={style.CtnCaru1}>
                 <button className={style.btn} onClick={() => setShow(true)}>
                     <div className={style.ctnImg}>
@@ -32,15 +25,23 @@ const ProyectMovie = () => {
                 </button>
             </div>
 
+            <div className={style.ctnTextoCaru}>
+                <p className={style.title}> Movies-Api </p>
+                <p className={style.textoCaru1}> Work in Movies Api, using React-Redux. You can search for movies, add them to favorites and see all the details of them
+                    <a href='https://github.com/davidheredia25/Movies-app'> Code</a>
+                </p>
+            </div>
+
             <Modal
+           
                 show={show}
                 size="xl"
                 centered
                 onHide={() => setShow(false)}
             >
 
-                <Carousel>
-                    <Carousel.Item >
+                <Carousel   >
+                    <Carousel.Item>
                         <img
                             className="d-block w-100"
                             src={movie1}
@@ -65,7 +66,7 @@ const ProyectMovie = () => {
 
                     </Carousel.Item>
 
-                    <Carousel.Item>
+                    <Carousel.Item >
                         <img
                             className="d-block w-100"
                             src={movie1}

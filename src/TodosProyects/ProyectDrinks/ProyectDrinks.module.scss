@@ -37,8 +37,7 @@
 }
 
 .ctnTextoCaru {
-  width: 35%;
-  margin-right: 60px;
+  @include ctnTextCaru;
 }
 
 .title {

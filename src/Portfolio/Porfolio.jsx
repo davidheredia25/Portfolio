@@ -4,8 +4,6 @@ import style from './Portfolio.module.scss';
 // import movie from './img/Movie.PNG';
 import todas from './img/todas.png';
 
-
-
 const Porfolio = () => {
 
     return (
@@ -19,9 +17,8 @@ const Porfolio = () => {
                 <div className={style.ctnImg}>
                     <img className={style.imgPorfolio} src={todas} alt={todas} />
                 </div>
-
-
             </div>
+
         </section >
     )
 }

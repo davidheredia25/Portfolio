@@ -19,6 +19,7 @@
 @mixin ctnSupCaruText {
   display: flex;
   justify-content: center;
+
 }
 
 @mixin cntCaru {
@@ -26,6 +27,7 @@
   margin-right: 20px;
   display: inline-block;
   position: relative;
+  padding: auto;
 }
 
 @mixin btnClose {
@@ -40,7 +42,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: rgb(255, 255, 255);
   background-color: #ffffff;
   border: none;
   cursor: pointer;
@@ -53,8 +54,10 @@
 }
 
 @mixin ctnTextCaru {
-  width: 35%;
+  width: 600px;
+  height: 300px;
   margin-left: 60px;
+ 
 }
 
 @mixin imgCaru {
@@ -62,7 +65,7 @@
   width: 300px;
   object-fit: cover;
   margin: 2px;
-  opacity: 90%;
+  // opacity: 90%;
 }
 
 @mixin titleCaru {

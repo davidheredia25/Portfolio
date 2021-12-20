@@ -6,7 +6,7 @@ import poke2 from './img/poke2.png';
 import poke3 from './img/poke3.png';
 import poke4 from './img/poke4.png'
 import Modal from 'react-bootstrap/Modal'
-import { BsArrowsFullscreen } from "react-icons/bs";
+import Loading from "../../Loading/Loading";
 
 
 
@@ -16,6 +16,8 @@ const ProyectPoke = () => {
     return (
         <div className={style.CtnPricipalPoke}>
             <div className={style.CtnCaru1}>
+
+                <Loading />
                 <button className={style.btn} onClick={() => setShow(true)}>
                     <div className={style.ctnImg}>
                         <img className={style.image1} src={poke1} alt="First slide" />
@@ -26,6 +28,8 @@ const ProyectPoke = () => {
                         <img className={style.image1} src={poke4} alt="First slide" />
                     </div>
                 </button>
+
+
             </div>
 
             <div className={style.ctnTextoCaru}>
