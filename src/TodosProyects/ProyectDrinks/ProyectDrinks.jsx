@@ -7,6 +7,7 @@ import drink3 from './img/drink3.png';
 import Modal from 'react-bootstrap/Modal'
 
 
+
 const ProyectDrinks = () => {
     const [show, setShow] = useState(false);
 
@@ -15,16 +16,8 @@ const ProyectDrinks = () => {
         <div className={style.CtnPricipalDrinks}>
 
             <div className={style.CtnCaru1}>
-                < button className={style.btn} onClick={() => setShow(true)}>
-                    <div className={style.ctnImg}>
-                        <img className={style.image1} src={drink1} alt="First slide" />
-                        <img className={style.image1} src={drink2} alt="First slide" />
-                    </div>
-                    <div className={style.ctnImg}>
-                        <img className={style.image1} src={drink3} alt="First slide" />
-                        <img className={style.image1} src={drink1} alt="First slide" />
-                    </div>
-                </button>
+                <img className={style.image1} src={drink3} alt="First slide" onClick={() => setShow(true)} />
+                <p className={style.ver}>VER MÁS</p>
             </div>
 
             <div className={style.ctnTextoCaru}>

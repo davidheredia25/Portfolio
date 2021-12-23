@@ -6,21 +6,33 @@
 
 .CtnCaru1 {
   @include cntCaru;
-  // @include large {
+  // @include large{
   //   width: 500px;
   // }
   // @include medium {
   //   width: 400px;
-  // }
+  //
 }
 
-.CtnCaru1:hover {
-  transform: scale(1.02);
+.ver{
+  @include verMas;
 }
+
+.CtnCaru1 > .ver {
+  @include ctnCaruVer;
+}
+
+// .CtnCaru1:hover {
+//   transform: scale(1.02);
+// }
+
+// .btn {
+//   @include btnFullImg;
+// }
 
 .image1 {
   @include imgCaru;
-  // @include large {
+  // @include large{
   //   width: 500px;
   // }
   // @include medium {
@@ -28,20 +40,20 @@
   // }
 }
 
-.btn {
-  @include btnFullImg;
+.image1:hover {
+ @include imagenHover;
 }
 
-.ctnImg {
-  @include ctnImages;
-}
+// .ctnImg {
+//   @include ctnImages;
+// }
 
 .ctnTextoCaru {
   @include ctnTextCaru;
 }
 
-.btnX {
-  @include btnClose;
+.title {
+  @include titleCaru;
 }
 
 .textoCaru1 {
@@ -50,4 +62,3 @@
     font-size: 12px;
   }
 }
-

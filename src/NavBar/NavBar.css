@@ -19,5 +19,11 @@
 }
 
 .nav-link:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
+  font-weight: 500;
+}
+
+.nav-link:focus{
+  transform:scale(1.1) ;
+  font-weight: 500;
 }

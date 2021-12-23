@@ -14,13 +14,21 @@
   //
 }
 
-.CtnCaru1:hover {
-  transform: scale(1.02);
+.ver{
+  @include verMas;
 }
 
-.btn {
-  @include btnFullImg;
+.CtnCaru1 > .ver {
+  @include ctnCaruVer;
 }
+
+// .CtnCaru1:hover {
+//   transform: scale(1.02);
+// }
+
+// .btn {
+//   @include btnFullImg;
+// }
 
 .image1 {
   @include imgCaru;
@@ -32,9 +40,13 @@
   // }
 }
 
-.ctnImg {
-  @include ctnImages;
+.image1:hover {
+ @include imagenHover;
 }
+
+// .ctnImg {
+//   @include ctnImages;
+// }
 
 .ctnTextoCaru {
   @include ctnTextCaru;

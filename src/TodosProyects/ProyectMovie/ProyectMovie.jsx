@@ -6,34 +6,30 @@ import movie1 from './img/movie1.PNG';
 import movie2 from './img/movie2.PNG';
 import movie3 from './img/movie3.PNG';
 
+
+
+
 const ProyectMovie = () => {
     const [show, setShow] = useState(false);
 
     return (
         <div className={style.CtnPricipalMovie}>
-
             <div className={style.CtnCaru1}>
-                <button className={style.btn} onClick={() => setShow(true)}>
-                    <div className={style.ctnImg}>
-                        <img className={style.image1} src={movie1} alt="First slide" />
-                        <img className={style.image1} src={movie2} alt="First slide" />
-                    </div>
-                    <div className={style.ctnImg}>
-                        <img className={style.image1} src={movie3} alt="First slide" />
-                        <img className={style.image1} src={movie1} alt="First slide" />
-                    </div>
-                </button>
+                <img className={style.image1} src={movie1} alt="First slide" onClick={() => setShow(true)} />
+                <p className={style.ver}>VER MÁS</p>
             </div>
 
             <div className={style.ctnTextoCaru}>
                 <p className={style.title}> Movies-Api </p>
+                {/* <p className={style.linea}></p> */}
                 <p className={style.textoCaru1}> Work in Movies Api, using React-Redux. You can search for movies, add them to favorites and see all the details of them
                     <a href='https://github.com/davidheredia25/Movies-app'> Code</a>
                 </p>
+
             </div>
 
             <Modal
-           
+
                 show={show}
                 size="xl"
                 centered

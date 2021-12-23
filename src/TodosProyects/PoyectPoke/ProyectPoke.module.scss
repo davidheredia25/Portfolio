@@ -11,17 +11,23 @@
   // }
   // @include medium {
   //   width: 400px;
-  // }
+  //
 }
 
-
-
-.btn {
-  @include btnFullImg;
+.ver{
+  @include verMas;
 }
 
-// .btn:hover{
-//   @include btnHover;
+.CtnCaru1 > .ver {
+  @include ctnCaruVer;
+}
+
+// .CtnCaru1:hover {
+//   transform: scale(1.02);
+// }
+
+// .btn {
+//   @include btnFullImg;
 // }
 
 .image1 {
@@ -34,13 +40,13 @@
   // }
 }
 
-.CtnCaru1:hover{
-  transform: scale(1.02)
+.image1:hover {
+ @include imagenHover;
 }
 
-.ctnImg {
-  @include ctnImages;
-}
+// .ctnImg {
+//   @include ctnImages;
+// }
 
 .ctnTextoCaru {
   @include ctnTextCaru;
@@ -56,3 +62,6 @@
     font-size: 12px;
   }
 }
+
+
+

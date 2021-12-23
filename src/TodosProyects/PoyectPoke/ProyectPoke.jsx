@@ -6,8 +6,6 @@ import poke2 from './img/poke2.png';
 import poke3 from './img/poke3.png';
 import poke4 from './img/poke4.png'
 import Modal from 'react-bootstrap/Modal'
-import Loading from "../../Loading/Loading";
-
 
 
 const ProyectPoke = () => {
@@ -16,21 +14,9 @@ const ProyectPoke = () => {
     return (
         <div className={style.CtnPricipalPoke}>
             <div className={style.CtnCaru1}>
-
-                <Loading />
-                <button className={style.btn} onClick={() => setShow(true)}>
-                    <div className={style.ctnImg}>
-                        <img className={style.image1} src={poke1} alt="First slide" />
-                        <img className={style.image1} src={poke2} alt="First slide" />
-                    </div>
-                    <div className={style.ctnImg}>
-                        <img className={style.image1} src={poke3} alt="First slide" />
-                        <img className={style.image1} src={poke4} alt="First slide" />
-                    </div>
-                </button>
-
-
-            </div>
+                <img className={style.image1} src={poke1} alt="First slide" onClick={() => setShow(true)} />
+                <p className={style.ver}>VER MÁS</p>
+            </div >
 
             <div className={style.ctnTextoCaru}>
                 <p className={style.title}> Poke-Api</p>

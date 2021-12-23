@@ -1,21 +1,18 @@
-import Contact from './Contact/Contact';
-import Home from './Home/Home';
-import Porfolio from './Portfolio/Porfolio';
-import TodosProyects from './TodosProyects/TodosProyects';
-import Skills from './Skills/Skills';
-import Footer from './Footer/Footer'
-
+import { Route, Routes } from 'react-router-dom';
+import Pdf from './Pdf/Pdf';
+import Render from './Render/Render';
 
 
 function App() {
   return (
     <div className='App'>
-      <Home />
-      <Porfolio />
-      <TodosProyects />
-      <Skills />
-      <Contact />
-      <Footer />
+
+      <Routes>
+      <Route exact path="/" element={<Render />} />
+        <Route exact path="/pdf" element={<Pdf />} />
+       
+      </Routes>
+
     </div>
   );
 }

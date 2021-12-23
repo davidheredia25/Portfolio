@@ -1,8 +1,11 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import './NavBar.css'
+import './NavBar.css';
+import { NavLink } from 'react-router-dom';
+
 
 const NavBar = () => {
+
     return (
         <div>
             <nav className="navbar fixed-top navbar-expand-lg ">
@@ -16,19 +19,22 @@ const NavBar = () => {
                                 <Link className="nav-link" to='home' smooth={true} duration={500}>HOME</Link>
                             </li>
                             <li class="nav-item">
-                                <Link className="nav-link" to='portfolio' smooth={true} duration={500}>PORTFOLIO</Link>
+                                <Link className="nav-link" to='portfolio' smooth={true} duration={500}>PROYECTS</Link>
                             </li>
                             <li class="nav-item">
-                                <Link className="nav-link" to='skills'  smooth={true} duration={500}>SKILLS</Link>
+                                <Link className="nav-link" to='skills' smooth={true} duration={500}>SKILLS</Link>
                             </li>
                             <li class="nav-item">
                                 <Link className="nav-link" to='contact' smooth={true} duration={500} >CONTACT</Link>
+                            </li>
+                            <li class="nav-item">
+                                <NavLink to="./pdf" target="_blank" className="nav-link"> DOWNLOAD CV</NavLink>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
-        </div>
+        </div >
     )
 }
 
