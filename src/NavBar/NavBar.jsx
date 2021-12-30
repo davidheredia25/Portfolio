@@ -1,40 +1,40 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import './NavBar.css';
+import style from './NavBar.module.scss';
 import { NavLink } from 'react-router-dom';
+import { Navbar, Container, Nav } from 'react-bootstrap'
+import { RiLinkedinLine, RiInstagramLine, RiGithubFill } from "react-icons/ri";
 
 
 const NavBar = () => {
 
     return (
-        <div>
-            <nav className="navbar fixed-top navbar-expand-lg ">
-                <div className="container-fluid">
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className=" text collapse navbar-collapse" id="navbarNav">
-                        <ul className=" navbar-nav">
-                            <li className="nav-item">
-                                <Link className="nav-link" to='home' smooth={true} duration={500}>HOME</Link>
-                            </li>
-                            <li class="nav-item">
-                                <Link className="nav-link" to='portfolio' smooth={true} duration={500}>PROYECTS</Link>
-                            </li>
-                            <li class="nav-item">
-                                <Link className="nav-link" to='skills' smooth={true} duration={500}>SKILLS</Link>
-                            </li>
-                            <li class="nav-item">
-                                <Link className="nav-link" to='contact' smooth={true} duration={500} >CONTACT</Link>
-                            </li>
-                            <li class="nav-item">
-                                <NavLink to="./pdf" target="_blank" className="nav-link"> DOWNLOAD CV</NavLink>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div >
+        <div >
+            <Navbar collapseOnSelect expand="md" fixed="top" variant="dark">
+                <Container fluid className={style.cntCon}>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Collapse className={style.navCss} id="responsive-navbar-nav">
+
+                        <Nav className={style.ctnNav1}>
+                            <Link className={style.navLinkDH} to='home' smooth={true} duration={500}>DH</Link>
+                            <Link className={style.navLink} to='home' smooth={true} duration={500}>HOME</Link>
+                            <Link className={style.navLink} to='portfolio' smooth={true} duration={500}>PROYECTS</Link>
+                            <Link className={style.navLink} to='skills' smooth={true} duration={500}>SKILLS</Link>
+                            <Link className={style.navLink} to='contact' smooth={true} duration={500} >CONTACT</Link>
+                            <NavLink to="./pdf" target="_blank" className={style.navLink} > DOWNLOAD CV</NavLink>
+                        </Nav>
+
+                        <Nav >
+                            <a className={style.navLink} href='https://www.linkedin.com/in/david-heredia-91625b24/'>< RiLinkedinLine className={style.icon} /></a>
+                            <a className={style.navLink} href='https://www.linkedin.com/in/david-heredia-91625b24/'>< RiInstagramLine className={style.icon} /></a>
+                            <a className={style.navLink} href='https://www.linkedin.com/in/david-heredia-91625b24/'>< RiGithubFill className={style.icon} /></a>
+                        </Nav>
+
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
+
+        </div>
     )
 }
 

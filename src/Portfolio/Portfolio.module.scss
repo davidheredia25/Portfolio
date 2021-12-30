@@ -1,16 +1,33 @@
 @import "../variables.scss";
 
+.ctnSec{
+  background-color: rgb(0, 0, 0);
+}
+
 .ctn {
   width: 100%;
   height: 100vh;
   color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
-  padding-top: 60px;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+//   @include smallSmall{
+//     width: 100%;
+//   }
+// @include medium {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: space-evenly;
+// }
+  
+ }
+
+//  .scroll{
+//    height: 0px;
+//  }
 
 
 .text {
@@ -18,9 +35,7 @@
   letter-spacing: 2px;
   font-size: 14px;
   font-weight: 600;
-  @include medium{
-    font-size: 12px;
-  }
+
 }
 
 .ctnTxt {
@@ -28,14 +43,11 @@
   margin: 0 auto;
   margin-bottom: 60px;
   width: 60%;
-  @include large{
-    margin-bottom: 30px;
-  }
-  @include medium{
-    width: 70%;
-    margin-bottom: 15px;
+  // @include medium{
+  //   width: 70%;
+  //   margin-bottom: 80px;
     
-  }
+  // }
 }
 
 .titleSup {
@@ -43,19 +55,46 @@
   font-size: 40px;
   letter-spacing: 2px;
   font-family: "Dosis", sans-serif;
-  @include medium{
-    font-size: 30px;
-  }
+  // @include medium{
+  //   font-size: 30px;
+  // }
 }
 
 .imgPorfolio {
-  height: 600px;
+  width: 1800px;
+  height: 100%;
+  @include large3{
+    width: 1600px;
+  }
+  @include large2{
+    width: 1400px;
+  }
+
   @include large{
-    height: 400px;
+    width: 1200px;
   }
   @include medium{
-    height: 300px;
+    width: 1000px;
   }
+ 
+   @include small{
+    width: 900px;
+  }
+  @include small2{
+    width: 800px;
+  }
+  @include small1{
+    width: 600px;
+  }
+  
+  @include smallInte{
+    width: 400px;
+  }
+  @include smallSmall{
+    width: 300px;
+  }
+  
+  
 }
 
 

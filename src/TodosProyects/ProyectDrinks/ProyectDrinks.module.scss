@@ -2,16 +2,12 @@
 
 .CtnPricipalDrinks {
   @include ctnSupCaruText;
+ 
 }
 
 .CtnCaru1 {
   @include cntCaru;
-  // @include large{
-  //   width: 500px;
-  // }
-  // @include medium {
-  //   width: 400px;
-  //
+  
 }
 
 .ver{
@@ -22,34 +18,21 @@
   @include ctnCaruVer;
 }
 
-// .CtnCaru1:hover {
-//   transform: scale(1.02);
-// }
 
-// .btn {
-//   @include btnFullImg;
-// }
 
 .image1 {
   @include imgCaru;
-  // @include large{
-  //   width: 500px;
-  // }
-  // @include medium {
-  //   width: 400px;
-  // }
+
 }
 
 .image1:hover {
  @include imagenHover;
 }
 
-// .ctnImg {
-//   @include ctnImages;
-// }
 
 .ctnTextoCaru {
   @include ctnTextCaru;
+  
 }
 
 .title {
@@ -58,7 +41,4 @@
 
 .textoCaru1 {
   @include textCaru;
-  @include medium {
-    font-size: 12px;
-  }
 }

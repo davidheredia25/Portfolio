@@ -1,5 +1,6 @@
 import React from 'react';
 import style from './Portfolio.module.scss';
+
 // import poke from './img/poke.png';
 // import movie from './img/Movie.PNG';
 import todas from './img/todas.png';
@@ -9,9 +10,8 @@ const Porfolio = () => {
     // const ZoomInScrollOut = batch( ZoomIn(2));
     return (
 
-        <section id='portfolio'>
-            <ScrollContainer>
-
+        <section className={style.ctnSec}  id='portfolio'>
+            <ScrollContainer >
                 <ScrollPage page={1}>
                     <div className={style.ctn}>
 
@@ -30,6 +30,7 @@ const Porfolio = () => {
                     </div>
                 </ScrollPage>
             </ScrollContainer>
+        
         </section >
 
     )
