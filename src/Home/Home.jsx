@@ -12,14 +12,10 @@ const Home = () => {
             <div className={style.ctn}>
                 <NavBar />
                 <div className={style.ctnT} >
-                    <h1 className={style.name} >David Heredia</h1>
-                    <h1 className={style.subTitle}>Full Stack Developer</h1>
-                    <p className={style.txt}>Hello! I am a Full Stack Developer. I live in Tandil, Province of Buenos Aires,
-                        Argentina. I would like to be part of a company where I can
-                        put my knowledge into practice, which gives me the opportunity to overcome
-                        all my goals, allowing me to improve and grow in the workplace, personal
-                        and intellectual.
-                    </p>
+                    <h1 className={style.name} > Hi! I am</h1>
+                    <h1 className={style.name} > David Heredia</h1>
+                    {/* <h1 className={style.subTitle}>Full Stack Developer</h1> */}
+                    <p className={style.txt}>A Full Stack Developer who builds websites.</p>
 
                     {/* <img className={style.img1} src={yo} alt={yo} /> */}
                 </div>

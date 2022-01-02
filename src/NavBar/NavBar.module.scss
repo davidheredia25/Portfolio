@@ -6,7 +6,7 @@
 
 .cntCon{
   margin: 20px 70px 20px 70px;
-
+  padding: 0px;
 }
 
 .navCss {
@@ -15,6 +15,7 @@
 }
 
 .ctnNav1{
+  position:static;
   align-items: center;
 }
 
@@ -49,9 +50,28 @@
   color: rgb(255, 255, 255) !important;
 }
 
+.navLink1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.836) !important;
+  margin: 0px 10px 0px 10px;
+  cursor: pointer;
+  align-items: center;
+}
+
 .icon{
-  font-size: 19px;
-  
+  font-size: 18px;
+}
+
+.navLink1:hover {
+  transform: scale(1.4);
+  color: rgb(255, 255, 255) !important;
+}
+
+.navLink1:focus{
+  transform:scale(1.4) ;
+  color: rgb(255, 255, 255) !important;
 }
 
 // .naviconLink:hover {

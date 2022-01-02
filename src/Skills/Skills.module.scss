@@ -34,23 +34,24 @@
 .ctnTxt {
   display: flex;
   justify-content: space-around;
-  @include medium {
-    display: flex;
-  justify-content: space-evenly;
+  // @include medium {
+  //   display: flex;
+  // justify-content: space-evenly;
+  // }
+   @include medium {
+  display: grid;
+  grid-template-rows: 100px 100px;
+  grid-template-columns: 10px 10px 10px 10px 10px;
   }
-  @include small1 {
-    display: inline-block;
-
-  }
-
 }
 
 
 .txt {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-  animation-name: icons;
+  animation-name: mueve;
   animation-duration: 4s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
@@ -58,7 +59,8 @@
 
 }
 
-@keyframes icons{
+
+@keyframes mueve{
   0%{
     left:0px;
 
@@ -108,11 +110,14 @@
 
 .icon {
   font-size: 35px;
-  @include large {
+  @include large2 {
     font-size: 25px;
   }
   @include medium {
-    font-size: 20px;
+    font-size: 25px;
+  }
+  @include small {
+    font-size: 30px;
   }
 }
 
@@ -120,7 +125,5 @@
   font-size: 20px;
   letter-spacing: 2px;
   font-family: "Dosis", sans-serif;
-  @include large {
-    font-size: 15px;
-  }
+  
 }

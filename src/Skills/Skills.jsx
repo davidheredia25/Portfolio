@@ -12,6 +12,7 @@ const Skills = () => {
             <div className={style.ctn}>
                 <h1 className={style.title}>SKILLS</h1>
                 <div className={style.ctnTxt}>
+
                     <div className={style.txt}> <IoLogoJavascript className={style.icon} /> <p className={style.p}>JavaScript</p></div>
                     <div className={style.txt}> <FaReact className={style.icon} /> <p className={style.p}>ReactJS</p></div>
                     <div className={style.txt}> <SiRedux className={style.icon} /> <p className={style.p}>Redux</p></div>
@@ -22,6 +23,7 @@ const Skills = () => {
                     <div className={style.txt}> <SiPostgresql className={style.icon} /> <p className={style.p}>PostgresSQL</p></div>
                     <div className={style.txt}>  <SiSequelize className={style.icon} /> <p className={style.p}>Sequalize</p> </div>
                     <div className={style.txt}><IoLogoNodejs className={style.icon} /> <p className={style.p}>NodeJS</p></div>
+
                 </div>
             </div>
         </section>
