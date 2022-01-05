@@ -10,9 +10,10 @@
   color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
   display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  
 //   @include smallSmall{
 //     width: 100%;
 //   }
@@ -43,11 +44,9 @@
   margin: 0 auto;
   margin-bottom: 60px;
   width: 60%;
-  // @include medium{
-  //   width: 70%;
-  //   margin-bottom: 80px;
-    
-  // }
+  @include smallSmall{
+    width: 300px;
+  }
 }
 
 .titleSup {
@@ -61,7 +60,7 @@
 }
 
 .imgPorfolio {
-  width: 1800px;
+  width: 1700px;
   height: 100%;
   @include large3{
     width: 1600px;
@@ -71,7 +70,7 @@
   }
 
   @include large{
-    width: 1200px;
+    width: 1000px;
   }
   @include medium{
     width: 1000px;

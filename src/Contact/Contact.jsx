@@ -1,16 +1,35 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import style from './Contact.module.scss';
 import { RiLinkedinLine } from "react-icons/ri";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsWhatsapp } from "react-icons/bs";
-import Modal from 'react-bootstrap/Modal'
+import Modal from 'react-bootstrap/Modal';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
-
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+
+
+
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_yj6fudj', 'template_3k80okm', e.target, 'user_JiQIFw2aYXZhkD6yhnHmX')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+
+        e.target.reset()
+        handleShow()
+       
+
+    };
 
     return (
         <section id='contact'>
@@ -49,33 +68,38 @@ const Contact = () => {
                         </a>
                     </div>
 
+                    <form onSubmit={sendEmail}>
+                        <div className={style.ctnImput}>
+                            <label className={style.title}>Name</label>
+                            <input
+                                className={style.input}
+                                type="text"
+                                name="name"
 
-                    <div className={style.ctnImput}>
-                        <label className={style.title}>Name</label>
-                        <input
-                            className={style.input}
-                            type="text"
-                            name='email'
+                            />
+                        </div>
 
-                        />
-                    </div>
+                        <div className={style.ctnImput}>
+                            <label className={style.title}>Email</label>
+                            <input
+                                className={style.input}
+                                type="text"
+                                name="email"
+                            />
+                        </div>
 
-                    <div className={style.ctnImput}>
-                        <label className={style.title}>Email</label>
-                        <input
-                            className={style.input}
-                            type="text"
-                            name='email'
-                        />
-                    </div>
+                        <div className={style.ctnImput}>
+                            <label className={style.title}>Message</label>
+                            <textarea className={style.textarea}
+                                name="message"
+                            />
 
-                    <div className={style.ctnImput}>
-                        <label className={style.title}>Message</label>
-                        <textarea className={style.textarea}
-
-                        />
-                    </div>
-                    <button className={style.btn} onClick={handleShow}>Enviar</button>
+                        </div>
+                        <div>
+                        <input className={style.btn} type="submit" value="Send message "></input>
+                        </div>
+                        
+                    </form>
                 </div>
 
             </div >
@@ -90,10 +114,10 @@ const Contact = () => {
                     <Modal.Title>Message sent</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                   I will be in touch with you soon, thank you very much for contacting me!
+                    I will be in touch with you soon, thank you very much for contacting me!
                 </Modal.Body>
                 <Modal.Footer className={style.ctnBtModal}>
-                    <button className={style.btnModal}  onClick={handleClose}>
+                    <button className={style.btnModal} onClick={handleClose}>
                         Aceptar
                     </button>
                 </Modal.Footer>

@@ -3,7 +3,7 @@ import { Link } from 'react-scroll';
 import style from './NavBar.module.scss';
 import { NavLink } from 'react-router-dom';
 import { Navbar, Container, Nav } from 'react-bootstrap'
-import { RiLinkedinLine, RiInstagramLine, RiGithubLine,RiFacebookLine } from "react-icons/ri";
+import { RiLinkedinLine, RiInstagramLine, RiGithubLine, RiFacebookLine } from "react-icons/ri";
 
 
 const NavBar = () => {
@@ -23,13 +23,13 @@ const NavBar = () => {
                             <Link className={style.navLink} to='contact' smooth={true} duration={500} >CONTACT</Link>
                             <NavLink to="./pdf" target="_blank" className={style.navLink} > DOWNLOAD CV</NavLink>
                         </Nav>
-                        
+
                         <Nav >
-                            <a className={style.navLink1} href='https://www.linkedin.com/in/david-heredia-91625b24/'>< RiLinkedinLine className={style.icon} /></a>
-                            <a className={style.navLink1} href='https://www.linkedin.com/in/david-heredia-91625b24/'>< RiGithubLine className={style.icon} /></a>
-                            <a className={style.navLink1} href='https://www.linkedin.com/in/david-heredia-91625b24/'>< RiInstagramLine className={style.icon} /></a>
-                            <a className={style.navLink1} href='https://www.linkedin.com/in/david-heredia-91625b24/'>< RiFacebookLine className={style.icon} /></a>
-                         
+                            <a className={style.navLink1} href='https://www.linkedin.com/in/david-heredia-91625b24/' target="_blank" rel="noreferrer">< RiLinkedinLine className={style.icon} /></a>
+                            <a className={style.navLink1} href='https://github.com/davidheredia25' target="_blank" rel="noreferrer">< RiGithubLine className={style.icon} /></a>
+                            <a className={style.navLink1} href='https://www.instagram.com/deividheredia/' target="_blank" rel="noreferrer">< RiInstagramLine className={style.icon} /></a>
+                            <a className={style.navLink1} href='https://www.facebook.com/davis.heredia/' target="_blank" rel="noreferrer">< RiFacebookLine className={style.icon} /></a>
+
                         </Nav>
 
                     </Navbar.Collapse>

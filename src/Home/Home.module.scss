@@ -31,6 +31,9 @@
   @include medium{
     background-position:45% 0%;
 }
+@include smallSmall{
+  background-position:38% 0%;
+}
 }
 
 
@@ -40,29 +43,40 @@
   top: 50%;
   left: 72%;
   transform: translate(-50%, -50%);
-  @include smallInte{
-    left: 45%;
-  }
+  
   @include medium{
     left: 70%;
-}
-@include small{
+  }
+  @include small{
   left: 65%;
-}
-@include small2{
+  }
+  @include small2{
   left: 52%;
+  }
+ @include smallInte{
+  left: 53%;
+  width: 480px;
 }
+ @include smallInteSmall{
+  left: 53%;
+  width: 350px;
 
+}
+@include smallSmall{
+  left: 53%;
+  width: 330px;
+}
 }
 
 
 .name {
+  margin: 0 auto;
   font-size: 55px;
-  margin: -8px;
   letter-spacing: 3px;
   font-family: "Dosis", sans-serif;
     @include smallInte{
     font-size: 35px;
+  
   }
   
 }
@@ -74,8 +88,13 @@
   margin-top: 20px;
   font-family: "Dosis", sans-serif;
   @include smallInte{
-    letter-spacing: 5px;
-    font-size: 16px;
+    letter-spacing: 4px;
+    font-size: 14px;
+  }
+
+  @include small1{
+    letter-spacing: 6px;
+
   }
  
 }

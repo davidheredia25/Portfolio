@@ -4,6 +4,12 @@
   }
 }
 
+@mixin smallInteSmall {
+  @media only screen and (max-width: 500px) {
+    @content;
+  }
+}
+
 @mixin smallInte {
   @media only screen and (max-width: 600px) {
     @content;
@@ -33,6 +39,7 @@
   }
 }
 
+
 @mixin large {
   @media only screen and (max-width: 1440px) {
     @content;
@@ -58,28 +65,10 @@
   @include small{
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 }
 
-@mixin cntCaru {
-  width: 600px;
-  margin-right: 30px;
-  display: inline-block;
-  position: relative;
-  padding: auto;
-  @include medium{
-   width: 500px;
-    margin-right: 20px;
-  }
-  @include small{
-    width: 600px;
-  }
-  @include smallInte{
-    width: 500px;
-  }
-  
- 
-}
 
 @mixin verMas {
   letter-spacing: 2px;
@@ -98,25 +87,58 @@
   z-index: -1;
   padding: 10px;
   margin: 0;
+}
+
+@mixin cntCaru {
+  width: 600px;
+  margin-right: 30px;
+  display: inline-block;
+  position: relative;
+  padding: auto;
+  @include medium{
+   width: 500px;
+    margin-right: 20px;
+  }
+  @include small{
+    width: 600px;
+    margin: 0px;
+  }
+ 
+  @include small1{
+    width: 550px;
+  }
+  @include smallInte{
+    width: 400px;
+  }
+  @include smallSmall{
+    width: 350px;
+
+  }
   
 }
 
 @mixin imgCaru {
+ text-align: center;
   height: 100%;
   width: 600px;
   object-fit: cover;
   cursor: pointer;
   // opacity: 90%;
    @include medium{
-    height: 100%;
-   width: 500px;
+    width: 100%;
   }
   @include small{
-    width: 600px;
+    width: 100%;
   }
-  @include smallInte{
-    width: 500px;
-  }
+  // @include small1{
+  //   width: 600px;
+  // }
+  // @include smallInte{
+  //   width: 400px;
+  // }
+  // @include smallSmall{
+  //   width: 100%;
+  // }
 }
 
 @mixin imagenHover {
@@ -141,13 +163,10 @@
      margin-left: 20px;
   }
   @include small{
-    width: 600px;
+    width: 95%;
+    margin-top: 20px;
     height: 200px;
-  }
-  @include smallInte{
-    margin-top:30px;
-    width: 500px;
-    height: 200px;
+    margin-left: 0px;
   }
 }
 
