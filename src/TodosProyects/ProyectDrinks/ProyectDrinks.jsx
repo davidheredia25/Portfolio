@@ -24,7 +24,7 @@ const ProyectDrinks = () => {
                 <p className={style.title}>E-shop drinks</p>
                 <p className={style.textoCaru1}>
                     I am currently working on a group project, it is about an E-Commerce about drinks, using SCRUM as an agile methodology, and different technologies such as: ReactJS, Redux, CSS, Bootstrap, Node.js, Express, MongoDB and Mongoose.
-                    <a href='https://github.com/davidheredia25/Drinks-App'> Code</a>
+                    <a href='https://github.com/davidheredia25/Drinks-App' target="_blank" rel="noreferrer"> Code</a>
                 </p>
 
             </div>

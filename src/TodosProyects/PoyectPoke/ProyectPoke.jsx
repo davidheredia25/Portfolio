@@ -21,7 +21,7 @@ const ProyectPoke = () => {
             <div className={style.ctnTextoCaru}>
                 <p className={style.title}> Poke-Api</p>
                 <p className={style.textoCaru1}> It is about a SPA that consumes data from an API (https://pokeapi.co) The technologies used for #Backend, #Nodejs, #ExpressJS and #Sequelize as #ORM. In the #PostgreSQL and #Frontend databases, it is developed in #React, #Redux and pure #Css, without the use of external libraries. Its main features are: Filter, sort and search for Pokémon. It is also possible to access the details of each Pokémon. Dynamic paging. Create your own Pokémon and save them in the database
-                    <a href='https://github.com/davidheredia25/PI-Pokemon-FT17a'> Code</a>
+                    <a href='https://github.com/davidheredia25/PI-Pokemon-FT17a' target="_blank" rel="noreferrer"> Code</a>
                 </p>
 
             </div>

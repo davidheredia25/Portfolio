@@ -23,7 +23,7 @@ const ProyectMovie = () => {
                 <p className={style.title}> Movies-Api </p>
                 {/* <p className={style.linea}></p> */}
                 <p className={style.textoCaru1}> Work in Movies Api, using React-Redux. You can search for movies, add them to favorites and see all the details of them
-                    <a href='https://github.com/davidheredia25/Movies-app'> Code</a>
+                    <a href='https://github.com/davidheredia25/Movies-app' target="_blank" rel="noreferrer"> Code</a>
                 </p>
 
             </div>
