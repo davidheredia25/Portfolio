@@ -4,32 +4,42 @@ import { RiLinkedinLine } from "react-icons/ri";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsWhatsapp } from "react-icons/bs";
 import Modal from 'react-bootstrap/Modal';
-import emailjs from 'emailjs-com';
+import { useFormik } from 'formik';
+import * as Yup from 'yup';
+import * as emailjs from 'emailjs-com';
 
 const Contact = () => {
     const [show, setShow] = useState(false);
-
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
+    const formik = useFormik({
+        initialValues: {
+            name: '',
+            email: '',
+            message: ''
+        },
+        validationSchema: Yup.object({
+            name: Yup.string()
+                .required('* Name field is required'),
+            email: Yup.string().email('Invalid email address')
+                .required('* Email field is required'),
+            message: Yup.string().required('* Message field is required')
+        }),
+        onSubmit: (values) => {
 
+            emailjs.send('service_yj6fudj', 'template_3k80okm', values, 'user_JiQIFw2aYXZhkD6yhnHmX')
+                .then((result) => {
+                    console.log(result.text);
+                    formik.resetForm()
+                    handleShow()
+                }, (error) => {
+                    console.log(error.text);
 
+                });
+        },
+    });
 
-    const sendEmail = (e) => {
-        e.preventDefault();
-
-        emailjs.sendForm('service_yj6fudj', 'template_3k80okm', e.target, 'user_JiQIFw2aYXZhkD6yhnHmX')
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
-
-        e.target.reset()
-        handleShow()
-       
-
-    };
 
     return (
         <section id='contact'>
@@ -68,37 +78,60 @@ const Contact = () => {
                         </a>
                     </div>
 
-                    <form onSubmit={sendEmail}>
+                    <form onSubmit={formik.handleSubmit}>
                         <div className={style.ctnImput}>
-                            <label className={style.title}>Name</label>
+                            <label className={style.title}>Name
+                                <div className={`expandable ${formik.touched.name && formik.errors.name ? 'show' : ''}`}>
+                                    <p className={style.error}>{formik.errors.name}</p>
+                                </div>
+                            </label>
                             <input
                                 className={style.input}
-                                type="text"
+                                id="name"
                                 name="name"
+                                type="text"
+                                autoComplete="off"
+                                onChange={formik.handleChange}
+                                value={formik.values.name}
 
                             />
+
                         </div>
 
                         <div className={style.ctnImput}>
-                            <label className={style.title}>Email</label>
+                            <label className={style.title}>Email
+                                <div className={`expandable ${formik.touched.email && formik.errors.email ? 'show' : ''}`}>
+                                    <p className={style.error}>{formik.errors.email}</p>
+                                </div>
+                            </label>
                             <input
                                 className={style.input}
-                                type="text"
+                                id="email"
+                                type="email"
                                 name="email"
+                                autoComplete="off"
+                                onChange={formik.handleChange}
+                                value={formik.values.email}
                             />
+
                         </div>
 
                         <div className={style.ctnImput}>
-                            <label className={style.title}>Message</label>
+                            <label className={style.title}>Message
+                                <div className={`expandable ${formik.touched.message && formik.errors.message ? 'show' : ''}`}>
+                                    <p className={style.error}>{formik.errors.message}</p>
+                                </div>
+                            </label>
                             <textarea className={style.textarea}
+                                id="message"
                                 name="message"
+                                autoComplete="off"
+                                onChange={formik.handleChange}
+                                value={formik.values.message}
                             />
+                        </div>
 
-                        </div>
-                        <div>
-                        <input className={style.btn} type="submit" value="Send message "></input>
-                        </div>
-                        
+                        <button className={style.btn} type="submit" > Send Message</button>
                     </form>
                 </div>
 

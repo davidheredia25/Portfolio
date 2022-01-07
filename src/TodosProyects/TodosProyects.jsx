@@ -18,7 +18,7 @@ const TodosProyects = () => {
             <button className={style.btn} onClick={() => setActive("ProyectPoke")}>POKE-API</button>
           </div>
 
-          <div>
+          <div >
             {active === "proyectDrinks" && <ProyectDrinks />}
             {active === "ProyectPoke" && <ProyectPoke />}
             {active === "ProyectMovie" && <ProyectMovie />}

@@ -65,15 +65,6 @@ const ProyectDrinks = () => {
 
                     </Carousel.Item>
 
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src={drink1}
-                            alt="Third slide"
-                        />
-
-                    </Carousel.Item>
-
                 </Carousel>
             </Modal>
 
