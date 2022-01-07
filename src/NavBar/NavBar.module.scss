@@ -2,9 +2,7 @@
   background-color: black;
 } */
 
-
-
-.cntCon{
+.cntCon {
   margin: 20px 70px 20px 70px;
   padding: 0px;
 }
@@ -12,21 +10,25 @@
 .navCss {
   display: flex;
   justify-content: space-between;
+  animation-duration: 4s;
+  animation-name: slidein;
 }
 
-.ctnNav1{
-  position:static;
+.ctnNav1 {
+  position: static;
   align-items: center;
 }
 
-.navLinkDH{
+.navLinkDH {
   font-size: 30px;
   margin-right: 30px;
   text-decoration: none;
   cursor: pointer;
-  font-family: 'Shadows Into Light', cursive;
+  font-family: "Shadows Into Light", cursive;
   color: rgb(255, 255, 255) !important;
+  
 }
+
 
 .navLink {
   font-family: "Montserrat", sans-serif;
@@ -37,6 +39,29 @@
   margin: 0px 15px 0px 15px;
   cursor: pointer;
   align-items: center;
+  
+}
+
+@keyframes slidein {
+  0% {
+    opacity: 0%;
+  }
+  25% {
+    opacity: 25%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  75% {
+    opacity: 75%;
+  }
+  100% {
+    opacity: 100%;
+  }
+
+  from {
+    transform: translate(100px, 0px);
+  }
 }
 
 .navLink:hover {
@@ -44,8 +69,8 @@
   color: rgb(255, 255, 255) !important;
 }
 
-.navLink:focus{
-  transform:scale(1.1) ;
+.navLink:focus {
+  transform: scale(1.1);
   color: rgb(255, 255, 255) !important;
 }
 
@@ -59,7 +84,7 @@
   align-items: center;
 }
 
-.icon{
+.icon {
   font-size: 18px;
 }
 
@@ -67,7 +92,6 @@
   transform: scale(1.4);
   color: rgb(255, 255, 255) !important;
 }
-
 
 // .naviconLink:hover {
 //   transform: scale(1.1);
