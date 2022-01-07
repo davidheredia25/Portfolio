@@ -16,7 +16,7 @@ const NavBar = () => {
                     <Navbar.Collapse className={style.navCss} id="responsive-navbar-nav">
 
                         <Nav className={style.ctnNav1}>
-                            <Link className={style.navLinkDH} to='home' smooth={true} duration={500}>DH</Link>
+                            <Link className={style.navLinkDH} to='home' smooth={true} duration={500}>DavidHeredia</Link>
                             <Link className={style.navLink} to='home' smooth={true} duration={500}>HOME</Link>
                             <Link className={style.navLink} to='portfolio' smooth={true} duration={500}>PROYECTS</Link>
                             <Link className={style.navLink} to='skills' smooth={true} duration={500}>SKILLS</Link>

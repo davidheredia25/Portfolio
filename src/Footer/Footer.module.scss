@@ -1,3 +1,5 @@
+@import '../variables.scss';
+
 .ctnFooter {
   height: 40vh;
   background-color: black;
@@ -12,6 +14,19 @@
   height: 100px;
   text-align: center;
   width: 1000px;
+  @include medium{
+    width: 800px;
+  }
+  @include small2{
+    width: 550px;
+  }
+  @include smallInte{
+    width: 450px;
+  }
+  @include smallInteSmall{
+    width: 320px;
+  }
+  
 }
 
 .navLin {
@@ -23,6 +38,18 @@
   margin: 0px 50px 0px 50px;
   cursor: pointer;
   align-items: center;
+  @include medium{
+    margin: 0px 30px 0px 30px;
+  }
+  @include small2{
+    margin: 0px 10px 0px 10px;
+    letter-spacing: 2px;
+  }
+  @include smallInteSmall{
+    margin: 0px 5px 0px 5px;
+    letter-spacing: 0px;
+  }
+
 }
 
 .navLin:hover {
@@ -49,6 +76,10 @@
 
 .ctnDh {
   color: rgb(133, 133, 133);
+  @include smallInteSmall{
+    width: 300px;
+    text-align: center;
+  }
 }
 
 .navLink1 {
@@ -58,6 +89,10 @@
   margin: 0px 30px 0px 30px;
   cursor: pointer;
   align-items: center;
+  @include small2{
+    margin: 0px 10px 0px 10px;
+  }
+  
 }
 
 .navLink1:hover {

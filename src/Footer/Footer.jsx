@@ -9,7 +9,7 @@ const Footer = () => {
     return (
         <div className={style.ctnFooter}>
 
-            <Link className={style.navLinkDH} to='home' smooth={true} duration={500}>David Heredia</Link>
+            <Link className={style.navLinkDH} to='home' smooth={true} duration={500}>DavidHeredia</Link>
             <div className={style.ctnFooter1}>
                 <div className={style.navFooter}>
                     <Link className={style.navLin} to='home' smooth={true} duration={500}>HOME</Link>
