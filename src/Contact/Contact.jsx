@@ -47,17 +47,19 @@ const Contact = () => {
                 <h1 className={style.titleSup}>CONTACT</h1>
 
 
-                <div className={style.form}>
+                <div className={style.form} >
                     <div className={style.ctnSupDate}>
-                        <div className={style.date}>
-                            < BsWhatsapp className={style.icon} />
-                            <div className={style.ctnTxt}>
-                                <p className={style.txt}>Telephone</p>
-                                <p className={style.txt2}>2494324168</p>
+                        <a className={style.a} href="https://api.whatsapp.com/send?phone=5492494324168&text=Hello!%20Your%20can%20write%20me%20here!" target="_blank" rel="noreferrer">
+                            <div className={style.date}>
+                                < BsWhatsapp className={style.icon} />
+                                <div className={style.ctnTxt}>
+                                    <p className={style.txt}>Telephone</p>
+                                    <p className={style.txt2}>2494324168</p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
 
-                        <a className={style.a} href='https://wa.me/+5494324168'>
+                        <a className={style.a} href="mailto:davis_heredia@hotmail.com" target="_blank" rel="noreferrer">
                             <div className={style.date}>
                                 < AiOutlineMail className={style.icon} />
                                 <div className={style.ctnTxt}>
@@ -67,7 +69,7 @@ const Contact = () => {
                             </div>
                         </a>
 
-                        <a className={style.a} href='https://www.linkedin.com/in/david-heredia-91625b24/'>
+                        <a className={style.a} href='https://www.linkedin.com/in/david-heredia-91625b24/' target="_blank" rel="noreferrer">
                             <div className={style.date}>
                                 < RiLinkedinLine className={style.icon} />
                                 <div className={style.ctnTxt}>
