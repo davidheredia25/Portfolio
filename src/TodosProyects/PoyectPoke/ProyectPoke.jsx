@@ -15,7 +15,7 @@ const ProyectPoke = () => {
         <div className={style.CtnPricipalPoke}>
             <div className={style.CtnCaru1}>
                 <img className={style.image1} src={poke1} alt="First slide" onClick={() => setShow(true)} />
-                <p className={style.ver}>VER MÁS</p>
+                <p className={style.ver}>SEE MORE</p>
             </div >
 
             <div className={style.ctnTextoCaru}>
