@@ -10,9 +10,10 @@
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/lo.png" />
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
   <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
-
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
   <title>David Heredia</title>
-  <!-- <style>
+  <style>
     body {
       background-color: black;
     }
@@ -23,7 +24,8 @@
       left: 50%;
       transform: translate(-50%, -50%);
       font-size: 100px;
-      font-family: "Dosis", sans-serif;
+      font-family: 'Shadows Into Light', cursive;
+      /* font-family: "Dosis", sans-serif; */
       color: rgb(255, 255, 255);
       animation-name: icon;
       animation-duration: 0.5s;
@@ -33,6 +35,7 @@
       -webkit-animation-timing-function: linear;
       -webkit-animation-iteration-count: infinite;
     }
+
 
     @-moz-keyframes icon {
       0% {
@@ -75,15 +78,20 @@
         opacity: 1;
       }
     }
-  </style> -->
+
+    .loader-hide {
+      display: none;
+    }
+  </style>
 </head>
 
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
-
-  <div id="root">
-    <!-- <p class="icon">DH</p> -->
+  <div class="preloader">
+    <p class="icon">DH</p>
   </div>
+
+  <div id="root"></div>
 
 </body>
 
