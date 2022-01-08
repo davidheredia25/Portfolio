@@ -59,7 +59,7 @@ const Contact = () => {
                             </div>
                         </a>
 
-                        <a className={style.a} href="mailto:davis_heredia@hotmail.com" target="_blank" rel="noreferrer">
+                        <a className={style.a} href="mailto:davis_heredia@hotmail.com">
                             <div className={style.date}>
                                 < AiOutlineMail className={style.icon} />
                                 <div className={style.ctnTxt}>
