@@ -10,7 +10,7 @@ const Porfolio = () => {
     // const ZoomInScrollOut = batch( ZoomIn(2));
     return (
 
-        <section className={style.ctnSec}  id='portfolio'>
+        <section className={style.ctnSec} id='portfolio'>
             <ScrollContainer >
                 <ScrollPage page={1}>
                     <div className={style.ctn}>
@@ -19,7 +19,7 @@ const Porfolio = () => {
 
                             <h1 className={style.titleSup}>PROYECTS</h1>
 
-                            <p className={style.text}>Projects carried out during the Soy Henry bootcamp. Where I apply learned technologies and others on my own! they will soon be deplored</p>
+                            <p className={style.text}> Projects carried out during the bootcamp SoyHenry</p>
                         </div>
                         <Animator animation={ZoomIn(2)}>
                             <div className={style.ctnImg}>
@@ -30,7 +30,7 @@ const Porfolio = () => {
                     </div>
                 </ScrollPage>
             </ScrollContainer>
-        
+
         </section >
 
     )
