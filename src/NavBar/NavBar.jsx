@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Link } from 'react-scroll';
 import style from './NavBar.module.scss';
 import { NavLink } from 'react-router-dom';
@@ -7,11 +7,21 @@ import { RiLinkedinLine, RiInstagramLine, RiGithubLine, RiFacebookLine } from "r
 
 
 const NavBar = () => {
+    const [nav, setNav] = useState(false)
 
+    const changeBackground = () => {
+        if(window.scrollY >= 100){
+            setNav(true)
+        } else {
+            setNav(false) 
+        }
+
+    }
+    window.addEventListener('scroll', changeBackground)
     return (
         <div >
-            <Navbar collapseOnSelect expand="md" fixed="top" variant="dark">
-                <Container fluid className={style.cntCon}>
+            <Navbar className={nav ? style.color : style.trasp} collapseOnSelect expand="md" fixed="top" >
+                <Container fluid className={nav ? style.espace : style.cntCon}>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse className={style.navCss} id="responsive-navbar-nav">
 

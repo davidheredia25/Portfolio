@@ -2,6 +2,28 @@
   background-color: black;
 } */
 
+.color {
+  animation-duration: 1s;
+  animation-name: slidein3;
+  background-color: rgb(0, 0, 0);
+}
+
+.trasp {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+@keyframes slidein3 {
+  from {
+    transform: translate(0px, 5px);
+  }
+}
+.espace {
+  // animation-duration: 1s;
+  // animation-name: slidein3;
+  margin: 5px 70px 5px 70px;
+  padding: 0px;
+}
+
 .cntCon {
   margin: 20px 70px 20px 70px;
   padding: 0px;
@@ -10,7 +32,6 @@
 .navCss {
   display: flex;
   justify-content: space-between;
-
 }
 
 .ctnNav1 {
@@ -25,9 +46,7 @@
   cursor: pointer;
   font-family: "Shadows Into Light", cursive;
   color: rgb(255, 255, 255) !important;
-  
 }
-
 
 .navLink {
   font-family: "Montserrat", sans-serif;
@@ -38,7 +57,6 @@
   margin: 0px 15px 0px 15px;
   cursor: pointer;
   align-items: center;
-  
 }
 
 @keyframes slidein {
