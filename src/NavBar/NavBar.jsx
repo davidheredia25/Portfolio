@@ -20,7 +20,7 @@ const NavBar = () => {
     window.addEventListener('scroll', changeBackground)
     return (
         <div >
-            <Navbar className={nav ? style.color : style.trasp} collapseOnSelect expand="md" fixed="top" >
+            <Navbar className={nav ? style.color : style.trasp} collapseOnSelect expand="md" fixed="top"  variant="dark">
                 <Container fluid className={nav ? style.espace : style.cntCon}>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse className={style.navCss} id="responsive-navbar-nav">
