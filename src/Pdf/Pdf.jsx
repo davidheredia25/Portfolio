@@ -12,8 +12,6 @@ const Pdf = () => {
                 height="100%"
             >
             </object>
-
-            <h1>DAVID</h1>
         </div>
     )
 }
