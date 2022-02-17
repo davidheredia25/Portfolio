@@ -1,102 +1,102 @@
 @import "../variables.scss";
 
-.ctnSec{
-  background-color: rgb(0, 0, 0);
+.ctnSec {
+	height: 100vh;
+	background-color: rgb(0, 0, 0);
+	padding-top: 60px;
+	width: 100%;
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	@include large {
+		height: 700px;
+	}
+	@include medium {
+		height: 750px;
+	}
+	@include small {
+		height: 700px;
+	}  
+	@include small2 {
+		height: 650px;
+	}
+	@include small1 {
+		height: 600px;
+	}
+	@include smallInte {
+		height: 500px;
+	}
+	@include smallInteSmall {
+		height: 470px;
+	}
+	@include smallSmall {
+		height: 400px;
+	}
 }
 
-.ctn {
-  padding-top: 30px;
-  width: 100%;
-  height: 100vh;
-  color: rgb(0, 0, 0);
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  
-//   @include smallSmall{
-//     width: 100%;
-//   }
-// @include medium {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: space-evenly;
-// }
-  
- }
-
-//  .scroll{
-//    height: 0px;
-//  }
-
-
 .text {
-  font-family: "Dosis", sans-serif;
-  letter-spacing: 2px;
-  font-size: 14px;
-  font-weight: 600;
-
+	font-family: "Dosis", sans-serif;
+	letter-spacing: 2px;
+	font-size: 14px;
+	font-weight: 600;
 }
 
 .ctnTxt {
-  text-align: center;
-  margin: 0 auto;
-  margin-bottom: 60px;
-  width: 60%;
-  @include smallSmall{
-    width: 300px;
-  }
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 60px;
+	width: 60%;
+	@include smallSmall {
+		width: 300px;
+	}
 }
 
 .titleSup {
-  margin-bottom: 30px;
-  font-size: 40px;
-  letter-spacing: 2px;
-  font-family: "Dosis", sans-serif;
-  // @include medium{
-  //   font-size: 30px;
-  // }
+	margin-bottom: 30px;
+	font-size: 40px;
+	letter-spacing: 2px;
+	font-family: "Dosis", sans-serif;
+	// @include medium{
+	//   font-size: 30px;
+	// }
 }
 
 .imgPorfolio {
-  width: 1700px;
-  height: 100%;
-  @include large3{
-    width: 1600px;
-  }
-  @include large2{
-    width: 1400px;
-  }
+	width: 1800px;
+	height: 100%;
+	@include large3 {
+		width: 1600px;
+	}
+	@include large2 {
+		width: 1400px;
+	}
 
-  @include large{
-    width: 1000px;
-  }
-  @include medium{
-    width: 1000px;
-  }
- 
-   @include small{
-    width: 900px;
-  }
-  @include small2{
-    width: 800px;
-  }
-  @include small1{
-    width: 600px;
-  }
-  
-  @include smallInte{
-    width: 400px;
-  }
-  @include smallSmall{
-    width: 300px;
-  }
-  
-  
+	@include large {
+		width: 1000px;
+	}
+	@include medium {
+		width: 1000px;
+	}
+
+	@include small {
+		width: 900px;
+	}
+	@include small2 {
+		width: 800px;
+	}
+	@include small1 {
+		width: 600px;
+	}
+
+	@include smallInte {
+		width: 360px;
+	}
+	@include smallSmall {
+		width: 300px;
+	}
 }
-
 
 /* .img:hover {
   opacity: 0.07;

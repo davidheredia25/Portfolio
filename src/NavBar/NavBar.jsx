@@ -22,11 +22,10 @@ const NavBar = () => {
         <div >
             <Navbar className={nav ? style.color : style.trasp} collapseOnSelect expand="md" fixed="top"  variant="dark">
                 <Container fluid className={nav ? style.espace : style.cntCon}>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />  <Link className={style.navLinkDH} to='home' smooth={true} duration={500}>DavidHeredia</Link>
                     <Navbar.Collapse className={style.navCss} id="responsive-navbar-nav">
 
                         <Nav className={style.ctnNav1}>
-                            <Link className={style.navLinkDH} to='home' smooth={true} duration={500}>DavidHeredia</Link>
                             <Link className={style.navLink} to='home' smooth={true} duration={500}>HOME</Link>
                             <Link className={style.navLink} to='portfolio' smooth={true} duration={500}>PROYECTS</Link>
                             <Link className={style.navLink} to='skills' smooth={true} duration={500}>SKILLS</Link>
