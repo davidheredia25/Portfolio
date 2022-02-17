@@ -27,7 +27,7 @@ const data = [
   {
     "id": 1,
     "title": "SpaceX",
-    "description": "This is a SPA that consumes data to the https://api.spacex.land/graphql/ API using the Apollo client. Also use ReactJS, Sass and Bootstrap",
+    "description": "It is a SPA that consumes data to the https://api.spacex.land/graphql/ API using the Apollo client. Also using ReactJS, Sass and Bootstrap.",
     "url": "https://github.com/davidheredia25/99minutos-frontend-interview-test/tree/JR-davidheredia",
     "img":
       [
@@ -63,7 +63,7 @@ const data = [
   {
     "id": 2,
     "title": "E-shop drinks",
-    "description": "It is a group project, which deals with an E-Commerce on drinks, using SCRUM as an agile methodology, and different technologies such as: ReactJS, Redux, CSS, Bootstrap, Node.js, Express, MongoDB and Mongoose",
+    "description": "It is a group project, which deals with an E-Commerce on drinks, using SCRUM as an agile methodology, and different technologies such as: ReactJS, Redux, CSS, Bootstrap, Node.js, Express, MongoDB and Mongoose.",
     "url": "https://github.com/davidheredia25/Drinks-App",
     "img":
       [
