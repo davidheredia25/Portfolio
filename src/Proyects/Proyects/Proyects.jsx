@@ -5,9 +5,9 @@ import ButtonSec from '../ButtonSec/ButtonSec';
 import space1 from '../img/space1.png';
 import space2 from '../img/space2.png';
 import space3 from '../img/space3.png';
-import space4 from '../img/space4.png';
-import space5 from '../img/space5.png';
-import space6 from '../img/space6.png';
+// import space4 from '../img/space4.png';
+// import space5 from '../img/space5.png';
+// import space6 from '../img/space6.png';
 
 import movie1 from '../img/movie1.PNG';
 import movie2 from '../img/movie2.PNG';
@@ -42,19 +42,19 @@ const data = [
         {
           "name": space3,
           "alt": "Third slide"
-        },
-        {
-          "name": space4,
-          "alt": "Third slide"
-        },
-        {
-          "name": space5,
-          "alt": "Third slide"
-        },
-        {
-          "name": space6,
-          "alt": "Third slide"
         }
+        // {
+        //   "name": space4,
+        //   "alt": "Third slide"
+        // },
+        // {
+        //   "name": space5,
+        //   "alt": "Third slide"
+        // },
+        // {
+        //   "name": space6,
+        //   "alt": "Third slide"
+        // }
 
       ],
 
