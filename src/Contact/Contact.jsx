@@ -28,7 +28,7 @@ const Contact = () => {
         }),
         onSubmit: (values) => {
 
-            emailjs.send('service_yj6fudj', 'template_3k80okm', values, 'user_JiQIFw2aYXZhkD6yhnHmX')
+            emailjs.send('service_yj6fudj', 'template_3k80okm', values, 'Cwafu0ZXE2MqDskBu')
                 .then((result) => {
                     console.log(result.text);
                     formik.resetForm()
