@@ -153,7 +153,7 @@ const Contact = () => {
                 </Modal.Body>
                 <Modal.Footer className={style.ctnBtModal}>
                     <button className={style.btnModal} onClick={handleClose}>
-                        Aceptar
+                        Accept
                     </button>
                 </Modal.Footer>
             </Modal>
