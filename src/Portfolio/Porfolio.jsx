@@ -16,7 +16,7 @@ const Porfolio = () => {
 
                     <div className={style.ctnTxt}>
 
-                        <h1 className={style.titleSup}>PROYECTS</h1>
+                        <h1 className={style.titleSup}>PROJECTS</h1>
 
                         <p className={style.text}> Projects carried out during the bootcamp SoyHenry</p>
                     </div>
