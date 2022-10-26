@@ -27,7 +27,7 @@ const NavBar = () => {
 
                         <Nav className={style.ctnNav1}>
                             <Link className={style.navLink} to='home' smooth={true} duration={500}>HOME</Link>
-                            <Link className={style.navLink} to='portfolio' smooth={true} duration={500}>PROYECTS</Link>
+                            <Link className={style.navLink} to='portfolio' smooth={true} duration={500}>PROJECTS</Link>
                             <Link className={style.navLink} to='skills' smooth={true} duration={500}>SKILLS</Link>
                             <Link className={style.navLink} to='contact' smooth={true} duration={500} >CONTACT</Link>
                             <NavLink to="./pdf" target="_blank" className={style.navLink} > DOWNLOAD CV</NavLink>
