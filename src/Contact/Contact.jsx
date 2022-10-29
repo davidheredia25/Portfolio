@@ -53,7 +53,7 @@ const Contact = () => {
                             <div className={style.date}>
                                 < BsWhatsapp className={style.icon} />
                                 <div className={style.ctnTxt}>
-                                    <p className={style.txt}>Telephone</p>
+                                    <p className={style.txt}>WhatsApp</p>
                                     <p className={style.txt2}>‪+5492477516109‬</p>
                                 </div>
                             </div>
