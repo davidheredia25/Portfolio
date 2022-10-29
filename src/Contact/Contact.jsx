@@ -49,7 +49,7 @@ const Contact = () => {
 
                 <div className={style.form} >
                     <div className={style.ctnSupDate}>
-                        <a className={style.a} href="https://api.whatsapp.com/send?phone=5492477516109‬&text=Hello!%20Your%20can%20write%20me%20here!" target="_blank" rel="noreferrer">
+                        <a className={style.a} href="whatsapp://send?phone=5492477516109" target="_blank" rel="noreferrer">
                             <div className={style.date}>
                                 < BsWhatsapp className={style.icon} />
                                 <div className={style.ctnTxt}>
