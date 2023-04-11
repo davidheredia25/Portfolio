@@ -1,5 +1,5 @@
 import React from 'react';
-import pdf from '../Docs/DavidHeredia-FullSackDeveloper.pdf'
+import pdf from './DavidHeredia-FullSackDeveloper.pdf'
 
 
 const Pdf = () => {
