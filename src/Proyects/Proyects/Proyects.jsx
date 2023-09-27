@@ -87,7 +87,7 @@ const data = [
   {
     "id": 3,
     "title": "Poke-Api",
-    "description": "It is about a SPA that consumes data from an API (https://pokeapi.co) The technologies used for #Backend, #Nodejs, #ExpressJS and #Sequelize as #ORM. In the #PostgreSQL and #Frontend databases, it is developed in #React, #Redux and pure #Css, without the use of external libraries. Its main features are: Filter, sort and search for Pokémon. It is also possible to access the details of each Pokémon. Dynamic paging. Create your own Pokémon and save them in the database.",
+    "description": "It is about a SPA that consumes data from an API (https://pokeapi.co) The technologies used for Backend: Nodejs, ExpressJS and Sequelize as ORM. In the PostgreSQL and Frontend databases, it is developed in React, Redux and pure Css, without the use of external libraries. Its main features are: Filter, sort and search for Pokémon. It is also possible to access the details of each Pokémon. Dynamic paging. Create your own Pokémon and save them in the database.",
     "url": "https://github.com/davidheredia25/PI-Pokemon-FT17a",
     "img":
       [
